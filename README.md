@@ -82,3 +82,8 @@ RMSE
 **13668.030893042014**, this means the average error in predictions is about $13,668.
 
 Since the prices are in hundreds of thousands, an RMSE of about $13,668 is acceptable.
+
+## Model interpretation
+
+Concludes that the model is applicable.
+
