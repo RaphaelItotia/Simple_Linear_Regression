@@ -20,7 +20,7 @@ df.shape
 ```
 Descriptive statistics such as mean, median, max,min;
 ```python
-df.describe ()
+df.describe()
 ```
 ### Visualization
 Plot the area against price;
@@ -41,10 +41,10 @@ reg=LinearRegression()
 reg.fit(df[['area']],df['price']) #train the model
 ```
 y = mx+b 
-y = represents the price of the house(dependent)
-m = coefficient
-x = represents the area of the house(independent) 
-b = intercept
+- y = represents the price of the house(dependent)
+- m = coefficient
+- x = represents the area of the house(independent) 
+- b = intercept
 
 Compute the intercept and coefficient;
 ```python
@@ -53,4 +53,24 @@ reg.intercept_
 
 ```python
 reg.coef_
+```
+Predict prices to check accuracy of the model;
+```python
+import numpy as np
+areas = df[['area']]
+
+def predict_for_areas(start_area, end_area):
+areas = np.arange(start_area, end_area+1).reshape(-1,1)
+
+df['predicted price'] = reg.predict(areas)
+df
+```
+
+Compute Mean Squared Error;
+```python
+from sklearn.metrics import mean_squared_error
+actual = df['price']
+pred = df['predicted price']
+MSE = mean_squared_error (actual,pred)
+MSE
 ```
