@@ -79,4 +79,6 @@ Having a Root Mean Squared Error(RMSE) of
 RMSE = mean_squared_error(actual,pred,squared= False)
 RMSE
 ```
-**13668.030893042014**, 
+**13668.030893042014**, this means the average error in predictions is about $13,668.
+
+Since the prices are in hundreds of thousands, an RMSE of about $13,668 is acceptable.
