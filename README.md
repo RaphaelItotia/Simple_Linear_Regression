@@ -13,7 +13,7 @@ import pandas as pd
 df = pd.read_csv(r'')
 df.head()
 ```
-## EDA 
+
 Confirm the shape of dataset;
 ```python
 df.shape
