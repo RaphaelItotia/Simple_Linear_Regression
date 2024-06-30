@@ -74,4 +74,9 @@ pred = df['predicted price']
 MSE = mean_squared_error(actual,pred)
 MSE
 ```
-Having a root mean squared error(RMSE) of 
+Having a Root Mean Squared Error(RMSE) of 
+```python
+RMSE = mean_squared_error(actual,pred,squared= False)
+RMSE
+```
+**13668.030893042014**, 
