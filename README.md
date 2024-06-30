@@ -71,6 +71,7 @@ Compute Mean Squared Error;
 from sklearn.metrics import mean_squared_error
 actual = df['price']
 pred = df['predicted price']
-MSE = mean_squared_error (actual,pred)
+MSE = mean_squared_error(actual,pred)
 MSE
 ```
+Having a root mean squared error(RMSE) of 
