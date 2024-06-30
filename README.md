@@ -32,7 +32,7 @@ plt.scatter(df['area'], df['price'], marker='+', color='red')
 plt. plot(df['area'], reg.predict(df[['area']]), color = 'blue') # added after model development
 ```
 
-[!Output]()
+![Output](Images/Scatter_plot.PNG)
 
 ## Model Development 
 ```python
