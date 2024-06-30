@@ -87,3 +87,6 @@ Since the prices are in hundreds of thousands, an RMSE of about $13,668 is accep
 
 Concludes that the model is applicable.
 
+Having a positive coefficient of **135.78767123**, this means that as the area of house increase by one square feet, the predicted price of house increases approximately by $135.79
+
+
