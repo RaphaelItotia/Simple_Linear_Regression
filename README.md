@@ -1,4 +1,4 @@
-# Simple_Linear_Regression 
+# Simple Linear Regression 
 ## Objective
 My aim is to predict house prices of new areas of houses based on the data I have.
 ## Data Collection 
@@ -87,6 +87,8 @@ Since the prices are in hundreds of thousands, an RMSE of about $13,668 is accep
 
 Concludes that the model is applicable.
 
-Having a positive coefficient of **135.78767123**, this means that as the area of house increase by one square feet, the predicted price of house increases approximately by $135.79
+Having a positive _coefficient_ of **135.78767123**, means that as the area of house increase by one square feet, the predicted price of house increases approximately by $135.79
 
+Having an _intercept_ of **180616.43835616432**, means that when the area of the house is 0, the predicted price of house is approximately $180616.44
 
+- In practical terms, this might not make sense, as a house with an area of zero square feet does not exist. However, the intercept is crucial for the mathematical formulation of the regression line.
