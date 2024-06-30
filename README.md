@@ -15,15 +15,18 @@ df.head()
 ```
 
 Confirm the shape of dataset;
+
 ```python
 df.shape
 ```
 Descriptive statistics such as mean, median, max, min;
+
 ```python
 df.describe()
 ```
 ### Visualization
 Plot the area against price;
+
 ```python
 import matplotlib.pyplot as plt
 plt.xlabel('Area', fontsize=20)
@@ -35,6 +38,7 @@ plt. plot(df['area'], reg.predict(df[['area']]), color = 'blue') # added after m
 ![Output](Images/Scatter_plot.PNG)
 
 ## Model Development 
+
 ```python
 from sklearn.linear_model import LinearRegression
 reg=LinearRegression()
@@ -42,6 +46,7 @@ reg.fit(df[['area']],df['price']) #train the model
 ```
 
 Predict prices to check accuracy of the model;
+
 ```python
 import numpy as np
 areas = df[['area']]
@@ -54,6 +59,7 @@ df
 ```
 
 Compute Mean Squared Error;
+
 ```python
 from sklearn.metrics import mean_squared_error
 actual = df['price']
@@ -63,7 +69,8 @@ MSE
 ```
 
 ## Model interpretation
-- Having a Root Mean Squared Error(RMSE) of 
+- Having a Root Mean Squared Error(RMSE) of
+  
 ```python
 RMSE = mean_squared_error(actual,pred,squared= False)
 RMSE
@@ -81,6 +88,7 @@ y = mx+b
 - b = intercept
 
 Compute the intercept and coefficient;
+
 ```python
 reg.intercept_
 ```
