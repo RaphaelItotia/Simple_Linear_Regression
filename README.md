@@ -40,20 +40,7 @@ from sklearn.linear_model import LinearRegression
 reg=LinearRegression()
 reg.fit(df[['area']],df['price']) #train the model
 ```
-y = mx+b 
-- y = represents the price of the house(dependent)
-- m = coefficient
-- x = represents the area of the house(independent) 
-- b = intercept
 
-Compute the intercept and coefficient;
-```python
-reg.intercept_
-```
-
-```python
-reg.coef_
-```
 Predict prices to check accuracy of the model;
 ```python
 import numpy as np
@@ -86,6 +73,21 @@ RMSE
 Since the prices are in hundreds of thousands, an RMSE of about $13,668 is acceptable.
 
 Concludes that the model is applicable.
+
+y = mx+b 
+- y = represents the price of the house(dependent)
+- m = coefficient
+- x = represents the area of the house(independent) 
+- b = intercept
+
+Compute the intercept and coefficient;
+```python
+reg.intercept_
+```
+
+```python
+reg.coef_
+```
 
 - Having a positive _coefficient_ of **135.78767123**, means that as the area of house increase by one square feet, the predicted price of house increases approximately by $135.79
 
