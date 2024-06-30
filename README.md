@@ -40,3 +40,17 @@ from sklearn.linear_model import LinearRegression
 reg=LinearRegression()
 reg.fit(df[['area']],df['price']) #train the model
 ```
+y = mx+b 
+y = represents the price of the house(dependent)
+m = coefficient
+x = represents the area of the house(independent) 
+b = intercept
+
+Compute the intercept and coefficient;
+```python
+reg.intercept_
+```
+
+```python
+reg.coef_
+```
