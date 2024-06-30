@@ -22,7 +22,7 @@ Descriptive statistics such as mean, median, max,min;
 ```python
 df.describe ()
 ```
-## Visualization
+### Visualization
 Plot the area against price;
 ```python
 import matplotlib.pyplot as plt
@@ -30,3 +30,13 @@ plt.xlabel('Area', fontsize=20)
 plt.ylabel('Price (USD), fontsize=20)
 plt.scatter(df['area'], df['price'], marker='+', color='red')
 plt. plot(df['area'], reg.predict(df[['area']]), color = 'blue') # added after model development
+```
+
+[!Output]()
+
+## Model Development 
+```python
+from sklearn.linear_model import LinearRegression
+reg=LinearRegression()
+reg.fit(df[['area']],df['price']) #train the model
+```
