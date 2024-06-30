@@ -3,14 +3,14 @@
 My aim is to predict house prices of new areas of houses based on the data I have.
 ## Data Collection 
 
-I have a [dataset](Assets/house_price.csv) which has 5 rows and 2 columns;
+I have a [dataset](Assets/house_price.csv) in csv format which has 5 rows and 2 columns;
 - 1st column consists the areas.
 - 2nd column consists the prices of the houses.
 ## EDA (Exploratory Data Analysis)
 First, load the dataset to be used into jupyter notebook;
 ```python
 import pandas as pd
-df = pd.read_csv(r'')
+df = pd.read_csv(r'file_path.csv')
 df.head()
 ```
 
@@ -18,7 +18,7 @@ Confirm the shape of dataset;
 ```python
 df.shape
 ```
-Descriptive statistics such as mean, median, max,min;
+Descriptive statistics such as mean, median, max, min;
 ```python
 df.describe()
 ```
