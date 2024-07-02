@@ -158,5 +158,19 @@ df.corr()
 
 It's evident that the independent variables have strong correlation.
 
+### Visualization 
 
+```python
+import plotly.express as px
+fig = px.scatter_3d(df, x='area', y='no_bedrooms', z='age', color='price', title='3D Scatter Plot')
+
+fig.update_layout(
+width=800,
+height=600,
+margin=dict(l=0,r=0,b=0,t=40))
+
+fig.show()
+```
+
+![Scatter]()
 
