@@ -5,11 +5,13 @@ My aim is to predict house prices of new areas of houses based on the data I hav
 # (a) Having one independent variable(y = mx + b)
 ## Data Collection 
 
-I have a [dataset](Assets/house_price.csv) in csv format which has 5 rows and 2 columns;
+I have a [dataset](Assets/house_price.csv) in csv format which has **5** rows and **2** columns;
 - 1st column consists the areas.(independent variable)
 - 2nd column consists the prices of the houses.(dependent variable)
+  
 ## EDA (Exploratory Data Analysis)
 First, load the dataset to be used into jupyter notebook;
+
 ```python
 import pandas as pd
 df = pd.read_csv(r'file_path.csv')
@@ -78,6 +80,7 @@ from sklearn.metrics import root_mean_squared_error
 RMSE = root_mean_squared_error(actual,pred)
 RMSE
 ```
+
 **13668.030893042014**, this means the average error in predictions is about $13,668.
 
 Since the prices are in hundreds of thousands, an RMSE of about $13,668 is acceptable.
@@ -108,6 +111,7 @@ reg.coef_
 
 
 # (b) Having more than one variable (y = m1x1 + m2x2 + m3x3 + ... + b)
+
 ## Data collection 
 For this case, I have a dataset with **5** rows and **4** columns;
 
@@ -151,6 +155,7 @@ df.drop('price',axis=1)
 df.corr()
 ```
 ![Correlation]()
+
 It's evident that the independent variables have strong correlation.
 
 
