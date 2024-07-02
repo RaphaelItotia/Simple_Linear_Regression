@@ -155,6 +155,7 @@ df.drop('price',axis=1)
 df.corr()
 ```
 ![Correlation]()
+
 Multicollinearity means that 2 or more independent variables correlate strongly with each other.
 
 It's evident that the independent variables have strong correlation.
