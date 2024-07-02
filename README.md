@@ -1,11 +1,13 @@
 # Simple Linear Regression 
 ## Objective
 My aim is to predict house prices of new areas of houses based on the data I have.
+
+# (a) Having one independent variable(y = mx + b)
 ## Data Collection 
 
 I have a [dataset](Assets/house_price.csv) in csv format which has 5 rows and 2 columns;
-- 1st column consists the areas.
-- 2nd column consists the prices of the houses.
+- 1st column consists the areas.(independent variable)
+- 2nd column consists the prices of the houses.(dependent variable)
 ## EDA (Exploratory Data Analysis)
 First, load the dataset to be used into jupyter notebook;
 ```python
@@ -72,7 +74,8 @@ MSE
 - Having a Root Mean Squared Error(RMSE) of
   
 ```python
-RMSE = mean_squared_error(actual,pred,squared= False)
+from sklearn.metrics import root_mean_squared_error
+RMSE = root_mean_squared_error(actual,pred)
 RMSE
 ```
 **13668.030893042014**, this means the average error in predictions is about $13,668.
@@ -102,3 +105,53 @@ reg.coef_
 - Having an _intercept_ of **180616.43835616432**, means that when the area of the house is 0, the predicted price of house is approximately $180616.44
 
   - In practical terms, this might not make sense, as a house with an area of zero square feet does not exist. However, the intercept is crucial for the mathematical formulation of the regression line.
+
+
+# (b) Having more than one variable (y = m1x1 + m2x2 + m3x3 + ... + b)
+## Data collection 
+For this case, I have a dataset with **5** rows and **4** columns;
+
+- Columns:
+    - area: area of the house in square feet.
+    - no_bedrooms: number of bedrooms in a particular house.
+    - age: number of years that the house has covered.
+    - price: actual price of the house.(only dependent variable)
+
+## Data cleaning
+Loaded the data into the IDE just like the case above.
+
+My data appeared to have a missing value on the _no_bedrooms_ column.
+
+I opted to replace with the median of the column:
+
+```python
+import math
+median = math.floor(df['no_bedrooms'].median()) # generate an integer
+median
+```
+Median = 3 
+
+Time to replace: 
+
+```python
+df['no_bedrooms'] = df['no_bedrooms'].fillna(median)
+df
+```
+## EDA 
+Confirm shape: 
+
+```python
+df.shape
+```
+
+Check correlation: 
+
+```python
+df.drop('price',axis=1)
+df.corr()
+```
+![Correlation]()
+It's evident that the independent variables have strong correlation.
+
+
+
