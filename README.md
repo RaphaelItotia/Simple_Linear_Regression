@@ -155,8 +155,15 @@ df.drop('price',axis=1)
 df.corr()
 ```
 ![Correlation]()
+Multicollinearity means that 2 or more independent variables correlate strongly with each other.
 
 It's evident that the independent variables have strong correlation.
+
+Since the aim is only to predict the price(How good the prediction is), this might not affect. 
+
+If the aim is to check how big the influence of the respective independent variables is, multicollinearity must be absent. 
+
+If it's present, the coefficients can't be interpreted meaningfully.
 
 ### Visualization 
 
