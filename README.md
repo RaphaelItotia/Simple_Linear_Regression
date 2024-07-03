@@ -210,16 +210,14 @@ error
 
 Calculate relative error of RMSE which helps to interpret the error in a more intuitive way: 
 
-                  RMSE
-Relative error = --------
-                 mean of the actual price
+Relative error = RMSE / mean of the actual price
 
 ```python
 import numpy as np
 y=df['price']
 mean_actual_price=np.mean(y)
 
-(RMSE /mean_actual_price) × 100
+(RMSE / mean_actual_price) × 100
 ```
 
 Check coefficients and intercept: 
