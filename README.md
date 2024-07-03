@@ -162,9 +162,6 @@ It's evident that the independent variables have strong correlation.
 
 Since the aim is only to predict the price(How good the prediction is), this might not affect. 
 
-If the aim is to check how big the influence of the respective independent variables is, multicollinearity must be absent. 
-
-If it's present, the coefficients can't be interpreted meaningfully.
 
 ### Visualization 
 
@@ -222,10 +219,10 @@ mean_actual_price=np.mean(y)
 
 Check coefficients and intercept: 
 
-```python
-reg.coef_
-```
+## Model interpretation 
 
-```python
-reg.intercept_
-```
+Since we have multicollinearity in our independent variables, this instability makes it difficult to determine the true effect of each predictor on the dependent variable which is the price. 
+
+In short, the coefficients can't be interpreted meaningfully.
+
+But there are several ways to deal with the multicollinearity such as removing highly correlated predictors, combining them, or use regularization methods; Ridge and Lasso.
