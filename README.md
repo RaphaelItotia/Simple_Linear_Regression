@@ -210,7 +210,7 @@ error
 
 Calculate relative error of RMSE which helps to interpret the error in a more intuitive way: 
 
-Relative error = RMSE / mean of the actual price
+Relative error = RMSE / mean of the actual prices
 
 ```python
 import numpy as np
