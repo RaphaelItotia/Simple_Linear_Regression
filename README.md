@@ -221,8 +221,8 @@ Check coefficients and intercept:
 
 ## Model interpretation 
 
-Since we have multicollinearity in our independent variables, this instability makes it difficult to determine the true effect of each predictor on the dependent variable which is the price. 
+Since we have multicollinearity in our independent variables, this instability makes it difficult to determine the true effect of each independent variable on the dependent variable which is the price. 
 
 In short, the coefficients can't be interpreted meaningfully.
 
-But there are several ways to deal with the multicollinearity such as removing highly correlated predictors, combining them, or use regularization methods; Ridge and Lasso.
+But there are several ways to deal with the multicollinearity such as removing highly correlated ind. variables, combining them, or use regularization methods; Ridge and Lasso.
