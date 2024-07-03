@@ -113,7 +113,7 @@ reg.coef_
 # (b) Having more than one variable (y = m1x1 + m2x2 + m3x3 + ... + b)
 
 ## Data collection 
-For this case, I have a dataset with **5** rows and **4** columns;
+For this case, I have a ![dataset](Assets/House_prices_multi.csv) with **5** rows and **4** columns;
 
 - Columns:
     - area: area of the house in square feet.
