@@ -182,3 +182,20 @@ fig.show()
 
 ![Scatter](Images/scatter_3d.PNG)
 
+## Model development 
+
+```python
+from sklearn.linear_model import LinearRegression
+reg=LinearRegression()
+reg.fit(df[['area','no_bedrooms','age']],df['price'])
+```
+
+Check coefficients and intercept: 
+
+```python
+reg.coef_
+```
+
+```python
+reg.intercept_
+```
