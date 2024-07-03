@@ -154,7 +154,7 @@ Check correlation:
 df.drop('price',axis=1)
 df.corr()
 ```
-![Correlation]()
+![Correlation](Images/corr.PNG)
 
 Multicollinearity means that 2 or more independent variables correlate strongly with each other.
 
@@ -180,5 +180,5 @@ margin=dict(l=0,r=0,b=0,t=40))
 fig.show()
 ```
 
-![Scatter]()
+![Scatter](Images/scatter_3d.PNG)
 
