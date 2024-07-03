@@ -190,6 +190,24 @@ reg=LinearRegression()
 reg.fit(df[['area','no_bedrooms','age']],df['price'])
 ```
 
+Execute the predictions: 
+
+```python
+df_pred=df.drop('price',axis=1)
+df['predicted price']=reg.predict(df_pred)
+df
+```
+
+Calculate RMSE to see whether the model is performing well: 
+
+```python
+from sklearn.metrics import root_mean_squared_error
+actual_price=df['price']
+predicted_price=df['predicted price']
+error=root_mean_squared_error (actual_price,predicted_price)
+error
+```
+
 Check coefficients and intercept: 
 
 ```python
