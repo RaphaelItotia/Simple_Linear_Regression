@@ -110,7 +110,7 @@ reg.coef_
   - In practical terms, this might not make sense, as a house with an area of zero square feet does not exist. However, the intercept is crucial for the mathematical formulation of the regression line.
 
 
-# (b) Having more than one variable (y = m1x1 + m2x2 + m3x3 + ... + b)
+# (b) Having more than one variable; $$\hat{y} = m_{1}x_{1} + m_{2}x_{2} + m_{3}x_{3} + ... + b$$
 
 ## Data collection 
 For this case, I have a [dataset](Assets/House_prices_multi.csv) with **5** rows and **4** columns;
