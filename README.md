@@ -2,7 +2,7 @@
 ## Objective
 My aim is to predict house prices of new areas of houses based on the data I have.
 
-# (a) Having one independent variable($$\hat{y} = mx + b$$)
+# (a) Having one independent variable; $$\hat{y} = mx + b$$
 ## Data Collection 
 
 I have a [dataset](Assets/house_price.csv) in csv format which has **5** rows and **2** columns;
