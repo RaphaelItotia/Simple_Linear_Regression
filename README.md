@@ -87,7 +87,7 @@ Since the prices are in hundreds of thousands, an RMSE of about $13,668 is accep
 
 Concludes that the model is applicable.
 
-y = mx+b 
+$$\hat{y} = mx + b$$ 
 - y = represents the price of the house(dependent)
 - m = coefficient
 - x = represents the area of the house(independent) 
